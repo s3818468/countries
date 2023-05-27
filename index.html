@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap"
+      rel="stylesheet" />
+    <title>Country</title>
+    <style>
+      .pagination-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .pagination-wrapper a {
+        margin: 0 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Country around the world</h1>
+    </div>
+    <div class="container">
+      <div class="form-control">
+        <input id="searchbar" type="text" name="search" placeholder="Search" />
+        <i class="fas fa-search"></i>
+      </div>
+      <select name="Region" id="region">
+        <option value="All">All</option>
+        <option value="Africa">Africa</option>
+        <option value="America">Americas</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="Oceania">Oceania</option>
+        <option value="Alpha">A -> Z</option>
+        <option value="Number">populations</option>
+        <option value="5">0 -> 5 millions</option>
+        <option value="10">6 -> 10 millions</option>
+        <option value="20">11 -> 20 millions</option>
+        <option value="100">21 -> 100 millions</option>
+      </select>
+    </div>
+    <div class="countries">
+      
+    </div>
+    <div id="pagination">
+      <!-- Pagination links will be dynamically added here -->
+    </div>
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>

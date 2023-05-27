@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.form-control {
+  width: 500px;
+  position: relative;
+}
+#searchbar {
+  width: 400px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+input[type="text"] {
+  width: 50%;
+  padding: 17px 14px;
+  outline: 0;
+  border: 0;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+select {
+  width: 200px;
+  display: flex;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.countries {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.country {
+  margin-bottom: 20px;
+  min-height: 350px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.country-img img {
+  width: 100%;
+  height: 100%;
+}
+.country-info{
+  padding: 20px 17px;
+}
+.country-info h5{
+  padding: 10px 0;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.country-info p{
+  letter-spacing: 1px;
+}
+.country-info p>strong{
+  font-weight: 600;
+}
